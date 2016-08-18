@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
 
-  "name": "supertabs",
+  "name": "super search",
   "description": "Shows top 3 search results",
   "version": "1.0",
 
   "browser_action": {
     "default_icon": "search.png",
     "default_popup": "popup.html",
-    "default_title": "SUPERTABS"
+    "default_title": "super search"
   },
   "content_scripts": [
     {
