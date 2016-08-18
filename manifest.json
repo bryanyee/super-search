@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "supertabs",
+  "description": "Shows top 3 search results",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "search.png",
+    "default_popup": "popup.html",
+    "default_title": "SUPERTABS"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/search*"],
+      "js": ["scrape.js"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
